@@ -1,0 +1,21 @@
+model:
+  name: random_forest
+  n_estimators: 200
+  max_depth: 10
+  random_state: 42
+
+data:
+  source: sklearn_iris
+  test_size: 0.2
+  random_state: 42
+
+evaluation:
+  metrics:
+    - accuracy
+    - f1_macro
+    - roc_auc_ovr
+  output_path: outputs/metrics.json
+
+report:
+  output_path: outputs/report.html
+  pages_path: docs/index.html
