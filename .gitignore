@@ -6,3 +6,4 @@ outputs/*.json
 outputs/*.pkl
 outputs/*.png
 !outputs/.gitkeep
+.env
